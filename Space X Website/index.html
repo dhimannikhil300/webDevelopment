@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .animation{
+            animation: hideAndShow 3s ease-in-out infinite;
+        }
+
+        @keyframes hideAndShow {
+            0%   {
+                opacity: 0;
+            }
+            20%  {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            50%  {
+                transform: translateY(10px);
+                opacity: 1;
+            }
+            70%{
+                transform: translateY(10px);
+                opacity: 0;
+            }
+            100%  {
+                opacity: 0;
+            }
+        }
+        
+        .upDownAnimation:hover{
+            color: black;
+            z-index: 1;
+        }
+        .upDownAnimation:hover::before{
+            content: "";
+            animation: downToUp 350ms ease-out 1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            z-index: 1;
+            background-color: white;
+            transform-origin: bottom;
+            z-index: -1;
+            transition: all 0.35;
+        }
+        @keyframes downToUp {
+            0%{
+                height: 0%;
+            }
+            50%{
+                height: 100%;
+            }
+        }
+        .upDownAnimation::after{
+            content: "";
+            position: absolute;
+            background-color: blue;
+            top: 0;
+            left : 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all 0.35s;
+        }
+        .upDownAnimation:hover::after{
+            transform: scaleY(1);
+            z-index: -10;
+        }
+    </style>
+</head>
+<body>
+    <!-- wrapper class  -->
+    <section class="realtive">
+        <!-- nav bar  -->
+        <div class="relative ">
+            <!-- navigation bar  -->
+            <nav class="fixed flex flex-row w-full max-w-[1400px] h-[100px] justify-center mx-auto 
+            items-baseline z-10">
+                <!-- spacex log  -->
+                <div class="w-[210px] cursor-pointer absolute top-[32px] left-[50px] h-auto">
+                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
+                        <title>SpaceX Logo</title>
+                        <g class="letter_s">
+                        <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+                        c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"></path>
+                        </g>
+                        <g class="letter_p">
+                        <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+                        c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"></path>
+                        </g>
+                        <g class="letter_a">
+                        <polygon class="fill-white" points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"></polygon>
+                        </g>
+                        <g class="letter_c">
+                        <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+                        c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"></path>
+                        </g>
+                        <g class="letter_e">
+                        <polygon class="fill-white" points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"></polygon>
+                        <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"></rect>
+                        </g>
+                        <g class="letter_x">
+                        <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"></path>
+                        <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"></path>
+                        </g>
+                        <g class="letter_swoosh">
+                        <path class="fill-white" d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <!-- items of navigation bar -->
+                <ul class="text-white w-full leading-[1.4] font-medium space-x-[12px] text-[14px]
+                font-Verdana absolute left-[285px] top-[38px] flex">
+                    <li class="cursor-pointer uppercase"> <a href=""> Falcon9</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Falcon Heavy</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Dragon</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Starship</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Human Spaceflight</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Rideshare</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Starshield</a></li>
+                    <li class="cursor-pointer uppercase"> <a href=""> Starlink</a></li>
+                </ul>
+                <!-- left side icon and shop  -->
+            <div class="absolute text-white top-[38px] right-[85px] h-[130px] space-x-[12px]">
+                <a href="" class="cursor-pointer font-Verdana font-medium text-[14px] leading-[1.4]">Shop</a>
+                <!-- HamBurger icon -->
+                <i class="fa fa-bars cursor-pointer h-[16px] w-[16px]"></i>
+            </div>
+            </nav>
+            
+            
+        </div>
+        <!-- section 1  -->
+        <section class="relative bg-[url('images/sectionImage1.jpg')] h-[1400px] bg-center bg-no-repeat bg-cover 
+        overflow-x-hidden">
+            <div class="relative w-full max-w-[1400px] mx-auto h-[1400px]">
+                <!-- upcoming launch -->
+                <div class="absolute bottom-[15%] left-[50px]">
+                    <span class="font-verdana text-[20px] uppercase leading-[38px] font-normal text-white">Upcoming Launch</span>
+                    <h2 class="font-verdana text-[48px] ml-[52ps] uppercase leading-[38px] font-bold text-white">Starlink Mission</h2>
+                    <button class="relative text-white border-[2px] border-white mt-[30px] min-w-[130px] uppercase upDownAnimation">
+                        <span class="w-[130px] h-[50px] text-[14px] font-bold leading-[50px]">Watch</span></button>
+                </div>
+                <!-- scroll icon  -->
+                <div class="absolute bottom-[20px] left-[50%] w-[30px] h-[20px] -ml-[15px] transition-all 
+                duration-200 animation">
+                    <svg width="30px" height="20px">
+                        <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 ">
+                        </path>
+                      </svg>
+                </div>
+            </div>
+        </section>
+        <!-- section 2  -->
+        <section class="relative bg-[url('images/sectionImage2.jpg')] h-[1400px] bg-center bg-no-repeat bg-cover 
+        overflow-x-hidden">
+            <div class="relative w-full max-w-[1400px] mx-auto h-[1400px]">
+                <!-- content  -->
+                <div class="absolute bottom-[15%] left-[50px] max-w-[520px]">
+                    <span class="font-verdana text-[20px] uppercase leading-[38px] font-normal text-white">
+                        RECENT LAUNCH</span>
+                    <h2 class="font-verdana text-[48px] ml-[52ps] uppercase leading-[38px] font-bold text-white">
+                        HISPASAT AMAZONAS NEXUS MISSION</h2>
+                    <button class="text-white border-[2px] border-white mt-[30px] min-w-[130px] uppercase">
+                        <span class="w-[130px] h-[50px] text-[14px] font-bold leading-[50px]">Watch</span></button>
+                </div>
+                <!-- scroll icon  -->
+                <div class="absolute bottom-[20px] left-[50%] w-[30px] h-[20px] -ml-[15px] transition-all 
+                duration-200 animation">
+                    <svg width="30px" height="20px">
+                        <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 ">
+                        </path>
+                      </svg>
+                </div>
+            </div>
+        </section>
+        <!-- section 3  -->
+        <section class="relative bg-[url('images/sectionImage3.webp')] h-[1400px] bg-center bg-no-repeat bg-cover 
+        overflow-x-hidden">
+            <div class="relative w-full max-w-[1400px] mx-auto h-[1400px]">
+                <div class="absolute bottom-[15%] left-[50px] max-w-[520px]">
+                    <!-- content  -->
+                    <h2 class="font-verdana text-[48px] ml-[52ps] uppercase leading-[38px] font-bold text-white">
+                        STARSHIP UPDATE</h2>
+                    <button class="text-white border-[2px] border-white mt-[30px] min-w-[130px] uppercase">
+                        <span class="w-[130px] h-[50px] text-[14px] font-bold leading-[50px]">Learn more</span>
+                    </button>
+                </div>
+                <!-- scroll icon  -->
+                <div class="absolute bottom-[20px] left-[50%] w-[30px] h-[20px] -ml-[15px] transition-all 
+                    duration-200 animation">
+                    <svg width="30px" height="20px">
+                        <path stroke="#ffffff" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000 ">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!-- section 4  -->
+        <section class="relative bg-[url('images/sectionImage4.webp')] h-[1400px] bg-center bg-no-repeat bg-cover 
+        overflow-x-hidden">
+            <div class="relative w-full max-w-[1400px] mx-auto h-[1400px]">
+                <!-- content  -->
+                <div class="absolute bottom-[15%] left-[50px] max-w-[520px]">
+                    <h2 class="font-verdana text-[48px] ml-[52ps] uppercase leading-[38px] font-bold text-white">
+                        STARSHIP SELECTED BY NASA TO SUPPORT SUSTAINED LUNAR EXPLORATION</h2>
+                    <button class="text-white border-[2px] border-white mt-[30px] min-w-[130px] uppercase">
+                        <span class="w-[130px] h-[50px] text-[14px] font-bold leading-[50px]">Learn more</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- footer  -->
+        <footer class="bg-black py-[20px] font-verdana">
+            <ul class="flex justify-center items-center text-white text-[12px] mt-[20px] mb-[15px] space-x-[40px]
+            font-bold ">
+                <li><span class="text-[#979797]">spacex &copy; 2022</span></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">Twitter</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">Youtuve</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">Instagram</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">flickr</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">linkedin</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">privacy policy</a></li>
+                <li class=" hover:opacity-70 transition-all duration-500"><a href="">supplies</a></li>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>
