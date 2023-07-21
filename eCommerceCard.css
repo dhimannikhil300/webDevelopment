@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Montserrat:wght@800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: rgba(210, 195, 178, 0.774);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 550px;
+    height: 323.7px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    border-radius: 14px;
+}
+#mug{
+    width: 15.2rem;
+    /* height: 19.5rem; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#head{
+    /* font-family: 'Fraunces', sans-serif; */
+    position: relative;
+    top: -5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: rgb(159, 156, 154);
+}
+#heading{
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    font-weight:900;
+    line-height: 26px;
+    position: relative;
+    top: -17px;
+}
+#para{
+    margin-right: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(159, 156, 154);
+    font-size: 14px;
+
+}
+#finalprize{
+    font-family: 'Fraunces', serif;
+    color: rgb(7, 147, 112);
+    font-size: 27px;
+    letter-spacing: -1px;
+    font-weight:900;
+    line-height: 26px;
+    position: relative;
+    top: 20px;
+}
+#mrp{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(159, 156, 154);
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight:200;
+    line-height: 26px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.cart{
+    background-color: rgb(7, 147, 112);
+    position: relative;
+    top: 50px;
+    width: 235px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addtocart{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    position: relative;
+    left: 12px;
+    font-size: 14px;
+}
