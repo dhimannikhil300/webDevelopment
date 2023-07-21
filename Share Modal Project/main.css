@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal{
+    scale: 0;
+}
+.active{
+    scale: 1;
+}
+.overlayactive{
+    opacity: 1;
+    pointer-events: inherit;
+}
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1Animate 15s infinite;
+  }
+  
+  @keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 1.11;
+    }
+  }
+  
+  .circle2 {
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 31%;
+    }
+  }
