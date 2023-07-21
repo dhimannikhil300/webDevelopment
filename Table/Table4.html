@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col span="1" style="visibility: collapse;">
+        <col style="width: 40px;">
+        <col span="2" style="width: 30px;">
+        <col style="width: 100px;">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td rowspan="3">abc</td>
+            <td colspan="3">abc</td>
+        </tr>
+        <tr> <td>2</td>
+            <td colspan="2">abc</td>
+            <td rowspan="2">abc</td>
+        </tr>
+        <tr>
+            <td>3</td>
+
+            <td colspan="2">abc</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">abc</td>
+            <td rowspan="2">abc</td>
+            <td rowspan="2">abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>abc</td>
+        </tr>
+        <tr> 
+            <td>6</td>
+            <td rowspan="4">abc1</td>
+            <td colspan="2">abc2</td>
+
+            <td rowspan="2" >abc3</td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2" rowspan="2">abc4</td>
+
+        </tr>
+        <tr>
+            <td>8</td>
+            <td rowspan="2">abc5 </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td colspan="2">abc6</td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+    </table>
+</body>
+</html>
