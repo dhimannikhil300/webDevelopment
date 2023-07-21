@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'ggsans';
+        src: url(Resources/Discord/fonts/gg-sans/ggsans-Medium.ttf),
+        url(Resources/Discord/fonts/gg-sans/ggsans-Bold.ttf),
+        url(Resources/Discord/fonts/gg-sans/ggsans-Normal.ttf),
+        url(Resources/Discord/fonts/gg-sans/ggsans-Semibold.ttf);
+    }
+    @font-face {
+        font-family: 'GintoNord';
+        src: url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-500.woff) format("woff"),
+        url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-500.woff2) format("woff"),
+        url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-600.woff) format("woff"),
+        url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-600.woff2) format("woff"),
+        url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-700.woff) format("woff"),
+        url(Resources/Discord/fonts/Ginto-Nord/Ginto-Nord-700.woff2) format("woff");
+    }
+    @font-face {
+        font-family: 'Ginto';
+        src: url(Resources/Discord/fonts/Ginto/Ginto-300-italic.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-300.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-400-italic.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-400.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-500-italic.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-500.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-600-italic.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-600.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-700-italic.woff),
+        url(Resources/Discord/fonts/Ginto/Ginto-700.woff);
+    }
+    @font-face {
+        font-family: Whitney;
+        font-weight: 300;
+        src: url(Resources/Discord/fonts/Whitney/Whitney-300.woff);
+        
+    }
+    @font-face {
+        font-family: Whitney;
+        font-weight: 400;
+        src: url(Resources/Discord/fonts/Whitney/Whitney-400.woff);
+    }
+    @font-face {
+        font-family: Whitney;
+        font-weight: 500;
+        src: url(Resources/Discord/fonts/Whitney/Whitney-500.woff);
+    }
+    @font-face {
+        font-family: Whitney;
+        font-weight: 600;
+        src: url(Resources/Discord/fonts/Whitney/Whitney-600.woff);
+    }
+    @font-face {
+        font-family: Whitney;
+        font-weight: 700;
+        src: url(Resources/Discord/fonts/Whitney/Whitney-700.woff);
+    }
+}
+
