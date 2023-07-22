@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restraunt_Surver_Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="top">
+            <div class="divi">
+                <img class="img_logo" src="logo (1).png">
+                <h1 >RESTAUNT SURVEY FORM</h1>
+            </div>
+        </div>
+        <hr>
+
+        <div class="low">
+
+            <div class="divi1">
+                <b>Please Give Honset FeedBack</b>
+                <br>
+                <p>what we are doing right and what we need more work on by filling out this form.</p>
+            </div>
+                
+
+            <form autocomplete="on" class="topForm">
+                <fieldset class="form">
+                    <div>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+                    </div>
+
+                    <div>
+                        <label for="Lname">Last name</label><br>
+                        <input type="text" id="lname" name="lname" required><br>
+                    </div>
+
+                    <div>
+                        <label for="Funame">Full name</label><br>
+                        <input type="text" id="Funame" name="Funame" required><br>
+                        <label for="Phone">Phone/Mobile number</label><br>
+                        <input type="tel" id="Phone" name="Phone" required><br><br>
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <p>Gender?</p>
+                        <input type="radio" id="Male" name="gender" required>
+                        <label for="Male">Male</label>
+
+                        <input type="radio" id="FeMale" name="gender" required>
+                        <label for="FeMale">FeMale</label><br><br>
+
+                        <label for="Date">Date of appointment</label><br>
+                        <input type="date" id="date" name="date" required><br><br>
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <p>Order type?</p>
+                        <input type="checkbox" id="Otype1" name="Otype1">
+                        <label for="Otype1">Dine in</label>
+
+                        <input type="checkbox" id="Otype2" name="Otype2">
+                        <label for="Otype2">Take out</label>
+
+                        <input type="checkbox" id="Otype3" name="Otype3">
+                        <label for="Otype3">Breakfast</label>
+
+                        <input type="checkbox" id="Otype4" name="Otype4">
+                        <label for="Otype4">Dinner</label><br><br>
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <label for="Party">Members in party</label><br>
+                        <input type="number" id="Party" name="Party"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="Sname">Name of the server</label><br>
+                        <input type="text" id="Sname" name="Sname"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="Forder">Food ordered</label><br>
+                        <input type="text" id="Forder" name="Forder"><br><br>
+                    </div>
+                    <br>
+
+                    <div>
+                        <p>Quality of food:</p>
+
+                        <input type="radio" id="Qfe" name="Quality">
+                        <label for="Qfe">Excellent</label>
+
+                        <input type="radio" id="Qfg" name="Quality">
+                        <label for="Qfg">Good</label>
+                    
+                        <input type="radio" id="Qff" name="Quality">
+                        <label for="Qff">Fair</label>
+
+                        <input type="radio" id="Qfp" name="Quality">
+                        <label for="Qfp">Poor</label><br>
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <p>Portion size:</p>
+
+                        <input type="radio" id="Pse" name="Portion">
+                        <label for="Pse">Excellent</label>
+
+                        <input type="radio" id="Psg" name="Portion">
+                        <label for="Psg">Good</label>
+                    
+                        <input type="radio" id="Psf" name="Portion">
+                        <label for="Psf">Fair</label>
+
+                        <input type="radio" id="Psp" name="Portion">
+                        <label for="Psp">Poor</label><br>
+                    </div>
+                    <br>
+
+                    <div>
+                        <p>Ease of ordering:</p>
+
+                        <input type="radio" id="Eoe" name="Ease">
+                        <label for="Eoe">Excellent</label>
+
+                        <input type="radio" id="Eog" name="Ease">
+                        <label for="Eog">Good</label>
+                    
+                        <input type="radio" id="Eof" name="Ease">
+                        <label for="Eof">Fair</label>
+
+                        <input type="radio" id="Eop" name="Ease">
+                        <label for="Eop">Poor</label><br>
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <p>Service:</p>
+
+                        <input type="radio" id="Se" name="Service">
+                        <label for="Se">Excellent</label>
+
+                        <input type="radio" id="Sg" name="Service">
+                        <label for="Sg">Good</label>
+                    
+                        <input type="radio" id="Sf" name="Service">
+                        <label for="Sf">Fair</label>
+
+                        <input type="radio" id="Sp" name="Service">
+                        <label for="Sp">Poor</label><br>
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <p>Cleanliness:</p>
+
+                        <input type="radio" id="Ce" name="Cleanliness">
+                        <label for="Ce">Excellent</label>
+
+                        <input type="radio" id="Cg" name="Cleanliness">
+                        <label for="Cg">Good</label>
+                    
+                        <input type="radio" id="Cf" name="Cleanliness">
+                        <label for="Cf">Fair</label>
+
+                        <input type="radio" id="Cp" name="Cleanliness">
+                        <label for="Cp">Poor</label><br>
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <p>Overall Value:</p>
+
+                        <input type="radio" id="Oe" name="Overall Value">
+                        <label for="Oe">Excellent</label>
+
+                        <input type="radio" id="Og" name="Overall Value">
+                        <label for="Og">Good</label>
+                    
+                        <input type="radio" id="Of" name="Overall Value">
+                        <label for="Of">Fair</label>
+
+                        <input type="radio" id="Op" name="Overall Value">
+                        <label for="Op">Poor</label><br><br>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="comments">Any Comments?</label><br>
+                        <!-- <input type="text" id="comments" name="comments"> -->
+                        <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+                    </div>
+
+                    <br>
+                    <div>
+                        <p>Age?</p>
+                        <input type="radio" id="Under18" name="Age">
+                        <label for="Under18">Under 18</label>
+
+                        <input type="radio" id="19to34" name="Age">
+                        <label for="19to34">19-34</label>
+
+                        <input type="radio" id="35to54" name="Age">
+                        <label for="35to54">35-54</label>
+
+                        <input type="radio" id="55+" name="Age">
+                        <label for="55+">55+</label><br><br>
+                    </div>
+
+                    <br>
+                    <div>
+                        <p>How you learned about us?</p>
+                        <input type="checkbox" id="newspaper" name="about">
+                        <label for="newspaper">newspaper</label>
+
+                        <input type="checkbox" id="TV" name="about">
+                        <label for="TV">TV</label>
+
+                        <input type="checkbox" id="Radio" name="about">
+                        <label for="Radio">Radio</label>
+
+                        <input type="checkbox" id="Friend" name="about">
+                        <label for="Friend"> Friend</label>
+
+                        <input type="checkbox" id="Other" name="about">
+                        <label for="Other">Other:</label><br> 
+                    </div>          
+                    <br>
+
+                </fieldset>
+                <br>
+                
+                <div class="button">
+                    <a href="thanks.html"> <button type="button" class="btn">Submit</button></a>
+                
+                    <input type="reset" class="btn">
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
